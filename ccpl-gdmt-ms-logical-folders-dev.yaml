@@ -1,0 +1,44 @@
+eureka:
+  client:
+    service-url:
+      defaultzone: http://localhost:8761/eureka
+  instance:
+    instance-id: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
+data-provider:
+  rest:
+    gdmt:
+      ms-documents:
+        urlFindDocumentById: ${data-provider.rest.gdmt.ms-documents.basePath}/documents/{document-id}
+        urlUpdateDocument: ${data-provider.rest.gdmt.ms-documents.basePath}/documents/{document-id}
+        urlBase: http://ccpl-gdmt-ms-documents/v1
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      show-sql: 'true'
+  datasource:
+    password: ccplGdmt2023
+    username: ccplGdmt
+    url: jdbc:postgresql://localhost:5432/ccplGdmtDB
+ribbon:
+  ConnectTimeout: '3000'
+  ReadTimeout: '10000'
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutinmilliseconds: '20000'
+server:
+  port: ${PORT:0}
