@@ -1,0 +1,37 @@
+eureka:
+  client:
+    service-url:
+      defaultzone: http://localhost:8761/eureka
+  instance:
+    instance-id: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      show-sql: 'true'
+  datasource:
+    password: ${gdmt.datasource.password}
+    username: ${gdmt.datasource.username}
+    url: ${gdmt.datasource.url}
+ribbon:
+  ConnectTimeout: '3000'
+  ReadTimeout: '10000'
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutinmilliseconds: '20000'
+server:
+  port: ${PORT:0}
