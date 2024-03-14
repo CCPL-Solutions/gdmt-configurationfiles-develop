@@ -46,3 +46,4 @@ cloud:
       access-key: ${gdmt.aws.accessKey}
       secret-key: ${gdmt.aws.secretKey}
     region: ${gdmt.aws.region}
+    urlBaseObj: https://%s.s3.amazonaws.com/%s
