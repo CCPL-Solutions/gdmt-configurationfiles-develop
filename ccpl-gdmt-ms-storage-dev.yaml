@@ -27,9 +27,9 @@ spring:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
       show-sql: 'true'
   datasource:
-    password: ccplGdmt2023
-    username: ccplGdmt
-    url: jdbc:postgresql://localhost:5432/ccplGdmtDB
+    password: ${gdmt.datasource.password}
+    username: ${gdmt.datasource.username}
+    url: ${gdmt.datasource.url}
 ribbon:
   ConnectTimeout: '3000'
   ReadTimeout: '10000'
