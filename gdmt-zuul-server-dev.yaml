@@ -1,0 +1,39 @@
+server:
+  port: 8090
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+zuul:
+  routes:
+    users:
+      service-id: microservice-user
+      path: /api-user/**
+
+    gdmt-retentionschedules-neg-develop:
+      service-id: gdmt-retentionschedules-neg-develop
+      path: /gdmt-retentionschedules-neg-develop/**
+
+    gdmt-retentionschedules-neg-feat-gdmt-1:
+      service-id: gdmt-retentionschedules-neg-feat-gdmt-1
+      path: /gdmt-retentionschedules-neg-feat-gdmt-1/**
+
+    gdmt-logicalfolders-neg:
+      service-id: gdmt-logicalfolders-neg
+      path: /document-management/logical-folders/**
+
+    file:
+      service-id: microservice-file
+      path: /api-files/**
+
+    documents:
+      service-id: microservice-document
+      path: /api-documents/**
+
+    oauth2:
+      service-id: microservice-oauth2
+      path: /api/security/**
+      sensitive-headers: Cookie,Set-Cookie
