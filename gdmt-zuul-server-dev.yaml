@@ -9,17 +9,13 @@ spring:
 
 zuul:
   routes:
-    users:
-      service-id: microservice-user
-      path: /api-user/**
+    gdmt-identitymanagement-neg-develop:
+      service-id: gdmt-identitymanagement-neg-develop
+      path: /gdmt-identitymanagement-neg-develop/**
 
     gdmt-retentionschedules-neg-develop:
       service-id: gdmt-retentionschedules-neg-develop
       path: /gdmt-retentionschedules-neg-develop/**
-
-    gdmt-retentionschedules-neg-feat-gdmt-1:
-      service-id: gdmt-retentionschedules-neg-feat-gdmt-1
-      path: /gdmt-retentionschedules-neg-feat-gdmt-1/**
 
     gdmt-logicalfolders-neg:
       service-id: gdmt-logicalfolders-neg
