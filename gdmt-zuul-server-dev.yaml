@@ -17,18 +17,6 @@ zuul:
       service-id: gdmt-retentionschedules-neg
       path: /gdmt-retentionschedules-neg/**
 
-    gdmt-logicalfolders-neg:
-      service-id: gdmt-logicalfolders-neg
-      path: /document-management/logical-folders/**
-
-    file:
-      service-id: microservice-file
-      path: /api-files/**
-
-    documents:
-      service-id: microservice-document
-      path: /api-documents/**
-
     gdmt-oauth2-server:
       service-id: gdmt-oauth2-server
       path: /gdmt-oauth2-server/**
