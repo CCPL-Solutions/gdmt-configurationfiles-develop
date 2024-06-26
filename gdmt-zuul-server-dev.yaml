@@ -9,9 +9,9 @@ spring:
 
 zuul:
   routes:
-    gdmt-identitymanagement-neg-develop:
-      service-id: gdmt-identitymanagement-neg-develop
-      path: /gdmt-identitymanagement-neg-develop/**
+    gdmt-identitymanagement-neg:
+      service-id: gdmt-identitymanagement-neg
+      path: /gdmt-identitymanagement-neg/**
 
     gdmt-retentionschedules-neg-develop:
       service-id: gdmt-retentionschedules-neg-develop
