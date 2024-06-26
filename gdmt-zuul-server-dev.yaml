@@ -13,9 +13,9 @@ zuul:
       service-id: gdmt-identitymanagement-neg
       path: /gdmt-identitymanagement-neg/**
 
-    gdmt-retentionschedules-neg-develop:
-      service-id: gdmt-retentionschedules-neg-develop
-      path: /gdmt-retentionschedules-neg-develop/**
+    gdmt-retentionschedules-neg:
+      service-id: gdmt-retentionschedules-neg
+      path: /gdmt-retentionschedules-neg/**
 
     gdmt-logicalfolders-neg:
       service-id: gdmt-logicalfolders-neg
