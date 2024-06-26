@@ -29,7 +29,7 @@ zuul:
       service-id: microservice-document
       path: /api-documents/**
 
-    gdmt-oauth2-server-develop:
-      service-id: gdmt-oauth2-server-develop
+    gdmt-oauth2-server:
+      service-id: gdmt-oauth2-server
+      path: /gdmt-oauth2-server/**
       sensitive-headers: Cookie,Set-Cookie
-      path: /document-management/gdmt-oauth2-server-develop/**

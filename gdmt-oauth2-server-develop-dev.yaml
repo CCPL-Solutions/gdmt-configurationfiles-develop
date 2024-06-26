@@ -1,0 +1,8 @@
+server:
+  port: ${PORT:0}
+
+data-provider:
+  rest:
+    gdmt-identitymanagement-neg:
+      baseUrl: http://gdmt-identitymanagement-neg-develop/api/develop
+      urlFindUserByUserName: ${data-provider.rest.gdmt-identitymanagement-neg.baseUrl}/users/username/{username}
