@@ -1,6 +1,24 @@
 server:
   port: ${PORT:0}
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://gdmt-eureka-server:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 10000
+
 spring:
   jpa:
     properties:
@@ -15,3 +33,9 @@ spring:
     password: ${gdmt.datasource.password}
     username: ${gdmt.datasource.username}
     url: ${gdmt.datasource.url}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
