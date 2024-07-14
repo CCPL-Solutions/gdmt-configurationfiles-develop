@@ -1,0 +1,45 @@
+server:
+  port: 8090
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://ms-eureka-server:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 10000
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+zuul:
+  routes:
+    ms-identitymanagement-neg:
+      service-id: ms-identitymanagement-neg
+      path: /ms-identitymanagement-neg/**
+
+    ms-logicalfolders-neg:
+      service-id: ms-logicalfolders-neg
+      path: /ms-logicalfolders-neg/**
+
+    ms-retentionschedules-neg:
+      service-id: ms-retentionschedules-neg
+      path: /ms-retentionschedules-neg/**
+
+    ms-oauth2-server:
+      service-id: ms-oauth2-server
+      path: /ms-oauth2-server/**
+      sensitive-headers: Cookie,Set-Cookie
