@@ -39,3 +39,9 @@ management:
     web:
       exposure:
         include: '*'
+  # TODO: Remove this section when Distributed Tracing configuration is added
+  health:
+    rabbit:
+      enabled: false
+    binders:
+      enabled: false
