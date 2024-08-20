@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://gdmt-ms-eureka-server:8761/eureka-server/eureka
+      defaultZone: http://gdmt-ms-eureka-server:8761/eureka
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
