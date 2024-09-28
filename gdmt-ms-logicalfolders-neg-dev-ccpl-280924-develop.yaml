@@ -45,3 +45,10 @@
         enabled: false
       binders:
         enabled: false
+
+  data-provider:
+    rest:
+      gdmt-ms-documents-neg:
+        #baseUrl: http://gdmt-ms-documents-neg-develop/api/develop
+        baseUrl: https://gdmtmocks.wiremockapi.cloud/api/develop
+        urlFindDocumentById: ${data-provider.rest.gdmt-ms-documents-neg.baseUrl}/documents/{documentId}
