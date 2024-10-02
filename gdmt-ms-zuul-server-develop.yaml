@@ -18,7 +18,7 @@ spring:
     sampler:
       probability: 1.0
     web:
-      skipPattern: /gdmt-ms-identitymanagement-neg/api/develop/actuator/health
+      skipPattern: /
   zipkin:
     baseUrl: http://gdmt-ms-zipkin-server:9411
 
