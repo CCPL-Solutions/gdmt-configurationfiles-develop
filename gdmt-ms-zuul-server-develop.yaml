@@ -18,7 +18,7 @@ spring:
     sampler:
       probability: 1.0
     web:
-      skipPattern: "^(http://dev\\.ccplsolutions\\.link/gdmt-ms-[^/]+/api/[^/]+/actuator/health)$"
+      skipPattern: http://dev.ccplsolutions.link/gdmt-ms-identitymanagement-neg/api/develop/actuator/health
   zipkin:
     baseUrl: http://gdmt-ms-zipkin-server:9411
 
