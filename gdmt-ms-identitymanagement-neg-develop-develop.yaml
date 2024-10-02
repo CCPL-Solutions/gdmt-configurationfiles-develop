@@ -28,3 +28,17 @@ spring:
       probability: 1.0
   zipkin:
     baseUrl: http://gdmt-ms-zipkin-server:9411
+
+application:
+  errors:
+    cross:
+      userNotFound:
+        code: GDMT_IMN_000
+        message: User not found.
+    createUser:
+      userAlreadyExists:
+        code: GDMT_IMN_001
+        message: User already exists.
+      roleNotFound:
+        code: GDMT_IMN_002
+        message: Role not found.
