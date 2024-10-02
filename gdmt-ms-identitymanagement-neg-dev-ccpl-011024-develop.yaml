@@ -3,7 +3,8 @@ server:
 
 eureka:
   client:
-    serviceUrl:
+    enabled: true
+    service-url:
       defaultZone: http://gdmt-ms-eureka-server:8761/eureka
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
@@ -19,9 +20,9 @@ spring:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
       show-sql: true
   datasource:
-    password: ${gdmt.datasource.password}
-    username: ${gdmt.datasource.username}
     url: ${gdmt.datasource.url}
+    username: ${gdmt.datasource.username}
+    password: ${gdmt.datasource.password}
   sleuth:
     sampler:
       probability: 1.0
