@@ -9,6 +9,13 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
+spring:
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    baseUrl: http://gdmt-ms-zipkin-server:9411
+
 data-provider:
   rest:
     gdmt-ms-identitymanagement-neg:
