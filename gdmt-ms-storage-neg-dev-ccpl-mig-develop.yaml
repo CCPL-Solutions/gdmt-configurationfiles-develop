@@ -1,0 +1,50 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    enabled: true
+    service-url:
+      defaultZone: http://gdmt-ms-eureka-server:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      show-sql: true
+  datasource:
+    url: ${gdmt.datasource.url}
+    username: ${gdmt.datasource.username}
+    password: ${gdmt.datasource.password}
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    baseUrl: http://gdmt-ms-zipkin-server:9411
+
+application:
+  errors:
+    operations:
+      uploadFile:
+        multiPartFileConversion:
+          code: GDMT_STN_001
+          message: Error converting multipartFile to file.
+        fileUploadAws:
+          code: GDMT_STN_002
+          message: Error uploading file to AWS S3 Bucket.
+  cloud:
+    aws:
+      credentials:
+        access-key: ${aws.credentials.access-key}
+        secret-key: ${aws.credentials.secret-key}
+      region: ${aws.region}
+      s3:
+        urlBaseObj: ${aws.s3.urlBaseObj}
+        bucketName: ${aws.s3.bucketName}
