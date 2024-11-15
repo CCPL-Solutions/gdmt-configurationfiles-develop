@@ -44,3 +44,7 @@ zuul:
     gdmt-ms-storage-neg:
       service-id: gdmt-ms-storage-neg
       path: /gdmt-ms-storage-neg/**
+
+    gdmt-ms-jaspertemplate-util:
+      service-id: gdmt-ms-jaspertemplate-util
+      path: /gdmt-ms-jaspertemplate-util/**
