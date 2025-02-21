@@ -33,12 +33,12 @@ application:
   errors:
     cross:
       documentTypeNotFound:
-        code: GDMT_RSN_000
+        code: GDMT_RSN_001
         message: Document type not found.
       fieldNotFound:
-        code: GDMT_RSN_001
+        code: GDMT_RSN_002
         message: Field not found.
     createDocumentType:
       documentTypeAlreadyExists:
-        code: GDMT_RSN_002
+        code: GDMT_RSN_003
         message: Document type already exists.
