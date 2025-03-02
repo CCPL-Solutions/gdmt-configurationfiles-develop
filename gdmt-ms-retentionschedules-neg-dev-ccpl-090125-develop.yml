@@ -30,6 +30,15 @@ spring:
     baseUrl: http://gdmt-ms-zipkin-server:9411
 
 application:
+  permissionsSettings:
+    enabled: true
+    objectType: DOCUMENT_TYPE
+    permissions:
+      createDocumentType: CREATE_DOCUMENT_TYPE
+      readDocumentType: READ_DOCUMENT_TYPE
+      updateDocumentType: UPDATE_DOCUMENT_TYPE
+      deleteDocumentType: DELETE_DOCUMENT_TYPE
+      manageDocumentType: MANAGE_DOCUMENT_TYPE
   errors:
     cross:
       documentTypeNotFound:
@@ -42,3 +51,11 @@ application:
       documentTypeAlreadyExists:
         code: GDMT_RSN_003
         message: Document type already exists.
+
+data-provider:
+  rest:
+    gdmt-ms-identitymanagement-neg:
+      baseUrl: http://gdmt-ms-identitymanagement-neg-dev-ccpl-261024/gdmt-ms-identitymanagement-neg/api/dev-ccpl-261024
+      operations:
+        findAllGroups: ${data-provider.rest.gdmt-ms-identitymanagement-neg.baseUrl}/groups
+        findAllPermissions: ${data-provider.rest.gdmt-ms-identitymanagement-neg.baseUrl}/permissions
