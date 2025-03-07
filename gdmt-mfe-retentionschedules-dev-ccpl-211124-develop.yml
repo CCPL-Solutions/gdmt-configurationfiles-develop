@@ -35,3 +35,9 @@ nuevalista:
   - dos
   - tres
 
+newObj:
+  newList:
+    - uno
+    - dos
+    - tres
+
