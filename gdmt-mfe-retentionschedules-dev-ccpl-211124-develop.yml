@@ -30,3 +30,8 @@ listaConfiguracion:
   - prop1: "valor3"
     prop2: "valor4"
 
+nuevalista:
+  - uno
+  - dos
+  - tres
+
