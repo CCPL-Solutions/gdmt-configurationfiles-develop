@@ -41,3 +41,75 @@ newObj:
     - dos
     - tres
 
+aplicacion:
+  codigoTipoProductoPagoInternetNsp: pagointernetNSP
+  codigoTipoProductoPagoInternet: pagointernet
+  productoPagoInternetActivo: true
+
+  llaveCachePagoEliminado: pagoEliminado
+  llaveCacheConsultaAvanzada: consultaAvanzadaPagos
+  llaveCacheAutorizacion: autorizacionPagos
+
+  llaveRutClienteClaim: rut_cliente
+  llaveNombreClienteClaim: nombre_cliente
+  llaveApellidoPaternoClienteClaim: apellido_p_cliente
+
+  perfilamiento:
+    productos:
+      botonDePagoPagador: BOTONPAGOPAGADOR
+    acciones:
+      accionesPagosInternet:
+        verResumen1:
+          codigo: BPRESB01
+          tipoLlave: BIENES
+        verResumen2:
+          codigo: BPRESI01
+          tipoLlave: IMPUESTOS
+        eliminarTransaccion1:
+          codigo: BPELIB01
+          tipoLlave: BIENES
+        eliminarTransaccion2:
+          codigo: BPELII01
+          tipoLlave: IMPUESTOS
+        consultarPendientesAutorizacion1:
+          codigo: BPCPAB01
+          tipoLlave: BIENES
+        consultarPendientesAutorizacion2:
+          codigo: BPCPAI01
+          tipoLlave: IMPUESTOS
+        autorizar1:
+          codigo: BPAUTB01
+          tipoLlave: BIENES
+        autorizar2:
+          codigo: BPAUTI01
+          tipoLlave: IMPUESTOS
+        consultarPendientesFirma1:
+          codigo: BPCPFB01
+          tipoLlave: BIENES
+        consultarPendientesFirma2:
+          codigo: BPCPFI01
+          tipoLlave: IMPUESTOS
+        firmar1:
+          codigo: BPFIRB01
+          tipoLlave: BIENES
+        firmar2:
+          codigo: BPFIRI01
+          tipoLlave: IMPUESTOS
+        consultarPendientesLiberacion1:
+          codigo: BPCPLB01
+          tipoLlave: BIENES
+        consultarPendientesLiberacion2:
+          codigo: BPCPLI01
+          tipoLlave: IMPUESTOS
+        liberar1:
+          codigo: BPLIBB01
+          tipoLlave: BIENES
+        liberar2:
+          codigo: BPLIBI01
+          tipoLlave: IMPUESTOS
+        consultarOperacionesHistoricas1:
+          codigo: BPCOHB01
+          tipoLlave: BIENES
+        consultarOperacionesHistoricas2:
+          codigo: BPCOHI01
+          tipoLlave: IMPUESTOS
