@@ -11,6 +11,6 @@ gdmtMsRetentionSchedulesNeg:
 
 
 messageByCodeError:
-  INTERNAL_SERVER_ERROR_CODE: "Se ha producido un error inesperado. Por favor, inténtelo de nuevo más tarde."
+  INTERNAL_SERVER_ERROR_CODE: "Se ha producido un error inesperado. Por favor, inténtelo de nuevo más tarde. Si el problema persiste, póngase en contacto con el administrador del sistema."
   UNAUTHORIZED_ERROR_CODE: "No autorizado."
   FORBIDDEN_ERROR_CODE: "No tiene permisos para realizar esta acción."
