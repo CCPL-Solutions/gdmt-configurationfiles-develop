@@ -1,2 +1,5 @@
 gdmtMsOauth2ServerBaseUrl: http://dev.ccplsolutions.link/gdmt-ms-oauth2-server/api/develop
 gdmtMsRetentionSchedulesNegBaseUrl: http://dev.ccplsolutions.link/gdmt-ms-retentionschedules-neg/api/dev-ccpl-090125
+
+messageByCodeError:
+  CCPL_GENERAL_ERROR_CODE: "Se ha producido un error inesperado. Por favor, inténtelo de nuevo más tarde."
