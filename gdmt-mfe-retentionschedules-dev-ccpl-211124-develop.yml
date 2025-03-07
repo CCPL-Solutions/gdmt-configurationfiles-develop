@@ -2,4 +2,6 @@ gdmtMsOauth2ServerBaseUrl: http://dev.ccplsolutions.link/gdmt-ms-oauth2-server/a
 gdmtMsRetentionSchedulesNegBaseUrl: http://dev.ccplsolutions.link/gdmt-ms-retentionschedules-neg/api/dev-ccpl-090125
 
 messageByCodeError:
-  CCPL_GENERAL_ERROR_CODE: "Se ha producido un error inesperado. Por favor, inténtelo de nuevo más tarde."
+  INTERNAL_SERVER_ERROR_CODE: "Se ha producido un error inesperado. Por favor, inténtelo de nuevo más tarde."
+  UNAUTHORIZED_ERROR_CODE: "No autorizado."
+  FORBIDDEN_ERROR_CODE: "No tiene permisos para realizar esta acción."
