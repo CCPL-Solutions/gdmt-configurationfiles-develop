@@ -9,10 +9,16 @@ gdmtMsRetentionSchedulesNeg:
   operations:
     findAllDocumentTypes: /document-types
 
+otro:
+  baseUrl: http://dev.ccplsolutions.link/gdmt-ms-retentionschedules-neg/api/dev-ccpl-090125
+  operations:
+    otro: /document-types
+
 messageByCodeError:
   INTERNAL_SERVER_ERROR_CODE: "Se ha producido un error inesperado. Por favor, inténtelo de nuevo más tarde."
   UNAUTHORIZED_ERROR_CODE: "No autorizado."
   FORBIDDEN_ERROR_CODE: "No tiene permisos para realizar esta acción."
+  GDMT_RSN_001: "Tipo documental no encontrado."
 
 otraConfiguracion:
   prop1: "valor1"
@@ -23,3 +29,4 @@ listaConfiguracion:
     prop2: "valor2"
   - prop1: "valor3"
     prop2: "valor4"
+
