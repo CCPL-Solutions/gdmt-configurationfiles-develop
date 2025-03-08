@@ -48,3 +48,7 @@ zuul:
     gdmt-ms-jaspertemplate-util:
       service-id: gdmt-ms-jaspertemplate-util
       path: /gdmt-ms-jaspertemplate-util/**
+
+    gdmt-ms-frontendconfiguration-utl:
+      service-id: gdmt-ms-frontendconfiguration-utl
+      path: /gdmt-ms-frontendconfiguration-utl/**
