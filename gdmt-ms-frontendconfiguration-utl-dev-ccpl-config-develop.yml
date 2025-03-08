@@ -19,6 +19,6 @@ spring:
 data-provider:
   rest:
     gdmt-ms-config-server:
-      base-url: http://gdmt-ms-config-server:8888
+      base-url: http://gdmt-ms-config-server
       operations:
         getComponentProperties: ${data-provider.rest.gdmt-ms-config-server.base-url}/{component}/{profile}
