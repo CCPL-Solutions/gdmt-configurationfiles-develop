@@ -10,6 +10,11 @@ gdmtMsRetentionSchedulesNeg:
   operations:
     findAllDocumentTypes: /document-types
 
+gdmtMsIdentitymanagementNeg:
+  baseUrl: http://dev.ccplsolutions.link/gdmt-ms-identitymanagement-neg/api/feat-ccpl-261024
+  operations:
+    findAllPermissions: /permissions
+
 
 messageByCodeError:
   OK: "Acción realizada con éxito."
