@@ -1,6 +1,6 @@
 gdmtMsOauth2ServerBaseUrl: http://dev.ccplsolutions.link/gdmt-ms-oauth2-server/api/develop
 gdmtMsRetentionSchedulesNegBaseUrl: http://dev.ccplsolutions.link/gdmt-ms-retentionschedules-neg/api/dev-ccpl-090125
-gdmtMsIdentitymanagementNegBaseUrl: http://dev.ccplsolutions.link/gdmt-ms-identitymanagement-neg/api/feat-ccpl-261024
+gdmtMsIdentitymanagementNegBaseUrl: http://dev.ccplsolutions.link/gdmt-ms-identitymanagement-neg/api/dev-ccpl-261024
 
 messageByCodeError:
   OK: "Acción realizada con éxito."
