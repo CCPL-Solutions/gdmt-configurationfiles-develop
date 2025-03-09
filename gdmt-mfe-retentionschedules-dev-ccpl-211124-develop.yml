@@ -1,20 +1,6 @@
-gdmtMsOauth2Server:
-  baseUrl: http://dev.ccplsolutions.link/gdmt-ms-oauth2-server/api/develop
-  operations:
-    getAccessToken: /oauth/token
-    checkToken: /oauth/check_token
-
-gdmtMsRetentionSchedulesNeg:
-  baseUrl: http://dev.ccplsolutions.link/gdmt-ms-retentionschedules-neg/api/dev-ccpl-090125
-  #baseUrl: http://localhost:8080/gdmt-ms-retentionschedules-neg/api/local
-  operations:
-    findAllDocumentTypes: /document-types
-
-gdmtMsIdentitymanagementNeg:
-  baseUrl: http://dev.ccplsolutions.link/gdmt-ms-identitymanagement-neg/api/feat-ccpl-261024
-  operations:
-    findAllPermissions: /permissions
-
+gdmtMsOauth2ServerBaseUrl: http://dev.ccplsolutions.link/gdmt-ms-oauth2-server/api/develop
+gdmtMsRetentionSchedulesNegBaseUrl: http://dev.ccplsolutions.link/gdmt-ms-retentionschedules-neg/api/dev-ccpl-090125
+gdmtMsIdentitymanagementNegBaseUrl: http://dev.ccplsolutions.link/gdmt-ms-identitymanagement-neg/api/feat-ccpl-261024
 
 messageByCodeError:
   OK: "Acción realizada con éxito."
