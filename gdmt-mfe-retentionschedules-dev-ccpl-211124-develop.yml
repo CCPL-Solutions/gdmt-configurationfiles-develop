@@ -5,7 +5,8 @@ gdmtMsOauth2Server:
     checkToken: /oauth/check_token
 
 gdmtMsRetentionSchedulesNeg:
-  baseUrl: http://dev.ccplsolutions.link/gdmt-ms-retentionschedules-neg/api/dev-ccpl-090125
+  #baseUrl: http://dev.ccplsolutions.link/gdmt-ms-retentionschedules-neg/api/dev-ccpl-090125
+  baseUrl: http://localhost:8080/gdmt-ms-retentionschedules-neg/api/dev-ccpl-090125
   operations:
     findAllDocumentTypes: /document-types
 
