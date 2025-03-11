@@ -40,17 +40,18 @@ application:
       deleteDocumentType: DELETE_DOCUMENT_TYPE
       manageDocumentType: MANAGE_DOCUMENT_TYPE
   errors:
-    cross:
-      documentTypeNotFound:
-        code: GDMT_RSN_001
-        message: Document type not found.
-      fieldNotFound:
-        code: GDMT_RSN_002
-        message: Field not found.
-    createDocumentType:
-      documentTypeAlreadyExists:
-        code: GDMT_RSN_003
-        message: Document type already exists.
+    documentTypeNotFound:
+      code: GDMT_RSN_001
+      message: Document type not found.
+    fieldNotFound:
+      code: GDMT_RSN_002
+      message: Field not found.
+    fieldAlreadyExists:
+      code: GDMT_RSN_003
+      message: Field already exists.
+    documentTypeAlreadyExists:
+      code: GDMT_RSN_004
+      message: Document type already exists.
 
 data-provider:
   rest:
