@@ -52,6 +52,21 @@ application:
     documentTypeAlreadyExists:
       code: GDMT_RSN_004
       message: Document type already exists.
+    itIsCaseFileCannotBeActivated:
+      code: GDMT_RSN_005
+      message: The "It is a case file" option cannot be activated because there are associated documents for this document type.
+    itIsCaseFileCannotBeDeactivated:
+      code: GDMT_RSN_006
+      message: The "It is a case file" option cannot be deactivated because there are associated documents for this document type.
+    daysToMoveToTrashNotPermitted:
+      code: GDMT_RSN_007
+      message: The days designated for moving the document to trash must exceed the number of days for blocking the document.
+    daysToDeleteNotPermitted:
+      code: GDMT_RSN_008
+      message: The days designated for deleting the document must exceed the number of days for moving the document to trash.
+    retentionDaysCannotBeZero:
+      code: GDMT_RSN_009
+      message: The retention days cannot be zero.
 
 data-provider:
   rest:
@@ -60,3 +75,7 @@ data-provider:
       operations:
         findAllGroups: ${data-provider.rest.gdmt-ms-identitymanagement-neg.baseUrl}/groups
         findAllPermissions: ${data-provider.rest.gdmt-ms-identitymanagement-neg.baseUrl}/permissions
+    gdmt-ms-documents-neg:
+      baseUrl: https://mock-ms-documents-neg.wiremockapi.cloud/gdmt-ms-documents-neg/api/develop
+      operations:
+        findAllDocuments: ${data-provider.rest.gdmt-ms-documents-neg.baseUrl}/documents
