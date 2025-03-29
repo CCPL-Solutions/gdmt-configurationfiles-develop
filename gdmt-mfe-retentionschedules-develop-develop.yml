@@ -9,5 +9,5 @@ messageByCodeError:
   FORBIDDEN_ERROR_CODE: "No tiene permisos para realizar esta acción."
   GDMT_RSN_003: "No es posible realizar la acción. El campo ya existe."
   GDMT_RSN_004: "El tipo documental ya existe en el sistema."
-  GDMT_RSN_005: "No es posible realizar la acción. No se puede desactivar la opción 'Es expediente' porque existen documentos asociados a este tipo documental."
+  GDMT_RSN_005: "No se puede activar la opción 'Es expediente' porque existen documentos asociados a este tipo documental."
 
