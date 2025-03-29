@@ -11,4 +11,7 @@ messageByCodeError:
   GDMT_RSN_004: "El tipo documental ya existe en el sistema."
   GDMT_RSN_005: "No se puede activar la opción 'Es expediente' porque existen documentos asociados a este tipo documental."
   GDMT_RSN_006: "No se puede desactivar la opción 'Es expediente' porque existen documentos asociados a este tipo documental."
+  GDMT_RSN_007: "Los días designados para mover el documento a la papelera deben superar al número de días para bloquear el documento."
+  GDMT_RSN_008: "Los días designados para eliminar el documento deben superar al número de días para mover el documento a la papelera."
+  GDMT_RSN_009: "Los días de retención no pueden ser cero."
 
