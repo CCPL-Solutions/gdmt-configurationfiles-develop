@@ -20,5 +20,5 @@ messageByCodeError:
   GDMT_RSN_009: "Los días de retención no pueden ser cero."
 
   # Documentary Areas error messages
-  GDMT_DCA_000: "El área documental ya existe en el sistema."
+  GDMT_DCA_000: "Ya existe un área documental con el nombre proporcionado."
 
