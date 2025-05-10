@@ -1,0 +1,70 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    enabled: true
+    service-url:
+      defaultZone: http://gdmt-ms-eureka-server:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      show-sql: true
+  datasource:
+    url: ${gdmt.datasource.url}
+    username: ${gdmt.datasource.username}
+    password: ${gdmt.datasource.password}
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    baseUrl: http://gdmt-ms-zipkin-server:9411
+
+application:
+  permissionsSettings:
+    enabled: true
+    objectType: DOCUMENTARY_AREA
+    permissions:
+      createDocumentaryArea: CREATE_DOCUMENTARY_AREA
+      readDocumentaryArea: READ_DOCUMENTARY_AREA
+      updateDocumentaryArea: UPDATE_DOCUMENTARY_AREA
+      deleteDocumentaryArea: DELETE_DOCUMENTARY_AREA
+      manageDocumentaryArea: MANAGE_DOCUMENTARY_AREA
+      restoreDocumentaryArea: RESTORE_DOCUMENTARY_AREA
+  maxFileSize: 10000
+  defaultDocumentTypeName: MyDocument
+  errors:
+    objectNotFound:
+      code: GDMT_OBN_000
+      message: Object not found.
+    documentaryAreaAlreadyExists:
+      code: GDMT_DCA_000
+      message: Documentary area already exists.
+    defaultDocumentTypeNotFound:
+      code: GDMT_DCA_001
+      message: Default document type not found.
+    documentaryAreaNotFound:
+      code: GDMT_DCA_002
+      message: Documentary area not found.
+
+data-provider:
+  rest:
+    gdmt-ms-identitymanagement-neg:
+      baseUrl: http://gdmt-ms-identitymanagement-neg-develop/gdmt-ms-identitymanagement-neg/api/develop
+      operations:
+        findAllGroups: ${data-provider.rest.gdmt-ms-identitymanagement-neg.baseUrl}/groups
+        findAllPermissions: ${data-provider.rest.gdmt-ms-identitymanagement-neg.baseUrl}/permissions
+    gdmt-ms-retentionschedules-neg:
+      baseUrl: http://gdmt-ms-retentionschedules-neg-develop/gdmt-ms-retentionschedules-neg/api/develop
+      operations:
+        findAllDocumentTypes: ${data-provider.rest.gdmt-ms-retentionschedules-neg.baseUrl}/document-types
+        findDocumentTypeById: ${data-provider.rest.gdmt-ms-retentionschedules-neg.baseUrl}/document-types/{documentTypeId}
