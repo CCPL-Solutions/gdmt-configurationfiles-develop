@@ -59,12 +59,12 @@ application:
 data-provider:
   rest:
     gdmt-ms-identitymanagement-neg:
-      baseUrl: http://gdmt-ms-identitymanagement-neg-develop/gdmt-ms-identitymanagement-neg/api/develop
+      baseUrl: http://gdmt-ms-identitymanagement-neg-develop/api/develop
       operations:
         findAllGroups: ${data-provider.rest.gdmt-ms-identitymanagement-neg.baseUrl}/groups
         findAllPermissions: ${data-provider.rest.gdmt-ms-identitymanagement-neg.baseUrl}/permissions
     gdmt-ms-retentionschedules-neg:
-      baseUrl: http://gdmt-ms-retentionschedules-neg-develop/gdmt-ms-retentionschedules-neg/api/develop
+      baseUrl: http://gdmt-ms-retentionschedules-neg-develop/api/develop
       operations:
         findAllDocumentTypes: ${data-provider.rest.gdmt-ms-retentionschedules-neg.baseUrl}/document-types
         findDocumentTypeById: ${data-provider.rest.gdmt-ms-retentionschedules-neg.baseUrl}/document-types/{documentTypeId}
