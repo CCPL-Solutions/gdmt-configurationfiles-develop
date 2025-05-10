@@ -52,3 +52,7 @@ zuul:
     gdmt-ms-frontendconfiguration-utl:
       service-id: gdmt-ms-frontendconfiguration-utl
       path: /gdmt-ms-frontendconfiguration-utl/**
+
+    gdmt-ms-documentaryareas-neg:
+      service-id: gdmt-ms-documentaryareas-neg
+      path: /gdmt-ms-documentaryareas-neg/**
