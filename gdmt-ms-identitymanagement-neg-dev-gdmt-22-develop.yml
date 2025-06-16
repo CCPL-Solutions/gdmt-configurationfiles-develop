@@ -1,0 +1,64 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    enabled: true
+    service-url:
+      defaultZone: http://gdmt-ms-eureka-server:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      show-sql: true
+  datasource:
+    url: ${ms.datasource.url}
+    username: ${ms.datasource.username}
+    password: ${ms.datasource.password}
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    baseUrl: http://gdmt-ms-zipkin-server:9411
+
+application:
+  identityTypeGroup: GROUP
+  identityTypeUser: USER
+  errors:
+    cross:
+      userNotFound:
+        code: GDMT_IMN_000
+        message: User not found.
+    createUser:
+      userAlreadyExists:
+        code: GDMT_IMN_001
+        message: User already exists.
+      roleNotFound:
+        code: GDMT_IMN_002
+        message: Role not found.
+    changeUserPassword:
+      previousPasswordIncorrect:
+        code: GDMT_IMN_003
+        message: Previous password is incorrect.
+      newPasswordEqualsOldPassword:
+        code: GDMT_IMN_004
+        message: New password is the same as the old password.
+    createGroup:
+      groupAlreadyExists:
+        code: GDMT_IMN_005
+        message: Group already exists.
+      groupNotFound:
+        code: GDMT_IMN_006
+        message: Group not found.
+    setUpGroupPermission:
+      groupPermissionNotFound:
+        code: GDMT_IMN_007
+        message: Group permission %s not found.
