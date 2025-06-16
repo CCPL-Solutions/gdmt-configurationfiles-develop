@@ -71,7 +71,7 @@ application:
 data-provider:
   rest:
     gdmt-ms-identitymanagement-neg:
-      baseUrl: http://gdmt-ms-identitymanagement-neg-feat-gdmt-22/api/feat-gdmt-22
+      baseUrl: http://gdmt-ms-identitymanagement-neg-dev-gdmt-22/api/dev-gdmt-22
       operations:
         findAllGroups: ${data-provider.rest.gdmt-ms-identitymanagement-neg.baseUrl}/groups
         findAllPermissions: ${data-provider.rest.gdmt-ms-identitymanagement-neg.baseUrl}/permissions
