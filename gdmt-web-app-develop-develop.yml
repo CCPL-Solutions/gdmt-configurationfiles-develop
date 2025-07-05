@@ -1,6 +1,6 @@
-gdmtMsOauth2ServerBaseUrl: http://localhost:8090/gdmt-ms-oauth2-server/api/develop
-gdmtMsRetentionSchedulesNegBaseUrl: http://localhost:8090/gdmt-ms-retentionschedules-neg/api/develop
-gdmtMsIdentitymanagementNegBaseUrl: http://localhost:8090/gdmt-ms-identitymanagement-neg/api/dev-gdmt-22
+gdmtMsOauth2ServerBaseUrl: http://dev.ccplsolutions.link/gdmt-ms-oauth2-server/api/develop
+gdmtMsRetentionSchedulesNegBaseUrl: http://dev.ccplsolutions.link/gdmt-ms-retentionschedules-neg/api/develop
+gdmtMsIdentitymanagementNegBaseUrl: http://dev.ccplsolutions.link/gdmt-ms-identitymanagement-neg/api/dev-gdmt-22
 gdmtMsDocumentaryAreasNegBaseUrl: http://localhost:8080/gdmt-ms-documentaryareas-neg/api/local
 
 messageByCodeError:
