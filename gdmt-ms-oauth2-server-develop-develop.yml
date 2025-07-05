@@ -19,7 +19,7 @@ spring:
 data-provider:
   rest:
     gdmt-ms-identitymanagement-neg:
-      baseUrl: http://gdmt-ms-identitymanagement-neg-dev-gdmt-22/api/dev-gdmt-22
+      baseUrl: http://gdmt-ms-identitymanagement-neg-develop/api/develop
       urlFindUserByUserName: ${data-provider.rest.gdmt-ms-identitymanagement-neg.baseUrl}/users/username/{username}
       urlFindAllGroups: ${data-provider.rest.gdmt-ms-identitymanagement-neg.baseUrl}/groups
       urlFindAllPermissions: ${data-provider.rest.gdmt-ms-identitymanagement-neg.baseUrl}/permissions
