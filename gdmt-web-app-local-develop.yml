@@ -10,6 +10,17 @@ messageByCodeError:
   UNAUTHORIZED_ERROR_CODE: "No autorizado."
   FORBIDDEN_ERROR_CODE: "No tiene permisos para realizar esta acción."
 
+  # user management error messages
+  #GDMT_IMN_000: User not found
+  GDMT_IMN_000: "Usuario no existe en el sistema."
+  GDMT_IMN_001: "El nombre de usuario ya está registrado."
+  GDMT_IMN_002: "Rol no existe en el sistema."
+  GDMT_IMN_003: "La contraseña actual no es correcta. Por favor, inténtelo de nuevo."
+  GDMT_IMN_004: "La nueva contraseña es la misma que la contraseña actual. Por favor, introduzca una contraseña diferente."
+  GDMT_IMN_005: "El grupo ya existe en el sistema."
+  GDMT_IMN_006: "Grupo no existe en el sistema."
+  GDMT_IMN_007: "Group permission <permission> not found"
+
   # Retention Schedules error messages
   GDMT_RSN_003: "No es posible realizar la acción. El campo ya existe."
   GDMT_RSN_004: "El tipo documental ya existe en el sistema."
