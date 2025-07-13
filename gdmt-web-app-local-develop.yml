@@ -19,7 +19,8 @@ messageByCodeError:
   GDMT_IMN_004: "La nueva contraseña es la misma que la contraseña actual. Por favor, introduzca una contraseña diferente."
   GDMT_IMN_005: "El grupo ya existe en el sistema."
   GDMT_IMN_006: "Grupo no existe en el sistema."
-  GDMT_IMN_007: "Group permission <permission> not found"
+  GDMT_IMN_007: "Group permission <permission> not found."
+  GDMT_IMN_008: "El correo electrónico ya está asociado a otro usuario."
 
   # Retention Schedules error messages
   GDMT_RSN_003: "No es posible realizar la acción. El campo ya existe."
