@@ -6,7 +6,8 @@ gdmtMsDocumentaryAreasNegBaseUrl: http://localhost:8090/gdmt-ms-documentaryareas
 messageByCodeError:
   # Common error messages
   OK: "Acción realizada con éxito."
-  INTERNAL_SERVER_ERROR_CODE: "Se ha producido un error inesperado. Por favor, inténtelo de nuevo más tarde. Si el problema persiste, póngase en contacto con el administrador del sistema."
+  INTERNAL_SERVER_ERROR_CODE: "Se ha producido un error inesperado. Por favor, inténtelo de nuevo más tarde."
+  CCPL_GENERAL_ERROR_CODE: "Se ha producido un error inesperado. Por favor, inténtelo de nuevo más tarde."
   UNAUTHORIZED_ERROR_CODE: "No autorizado."
   FORBIDDEN_ERROR_CODE: "No tiene permisos para realizar esta acción."
 
