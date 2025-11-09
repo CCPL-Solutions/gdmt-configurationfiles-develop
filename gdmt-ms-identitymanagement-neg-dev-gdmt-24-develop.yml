@@ -18,11 +18,13 @@ spring:
       naming:
         implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-      show-sql: true
+    show-sql: true
   datasource:
     url: ${ms.datasource.url}
     username: ${ms.datasource.username}
     password: ${ms.datasource.password}
+  flyway:
+    enabled: false
   sleuth:
     sampler:
       probability: 1.0
@@ -65,3 +67,8 @@ application:
       groupPermissionNotFound:
         code: GDMT_IMN_007
         message: Group permission %s not found.
+  globalResourceTypes:
+    - USER
+    - GROUP
+    - DOCUMENT_TYPE
+    - DOCUMENTARY_AREA
