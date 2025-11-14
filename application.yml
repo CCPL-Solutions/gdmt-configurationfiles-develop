@@ -1,11 +1,11 @@
-config:
-  security:
-    oauth:
-      client:
-        id: ${oauth.client.id}
-        secret: ${oauth.client.secret}
-      jwt:
-        key: ${oauth.jwt.key}
+#config:
+#  security:
+#    oauth:
+#      client:
+#        id: ${oauth.client.id}
+#        secret: ${oauth.client.secret}
+#      jwt:
+#        key: ${oauth.jwt.key}
 
 hystrix:
   command:
