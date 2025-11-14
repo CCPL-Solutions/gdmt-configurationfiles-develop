@@ -5,7 +5,7 @@ eureka:
   client:
     enabled: true
     service-url:
-      defaultZone: http://gdmt-ms-eureka-server:8761/eureka
+      defaultZone: ${EUREKA_SERVER_URL}
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
