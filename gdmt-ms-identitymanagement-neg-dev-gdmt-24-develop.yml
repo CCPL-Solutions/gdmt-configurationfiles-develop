@@ -17,11 +17,6 @@ spring:
     password: ${ms.datasource.password}
   flyway:
     enabled: false
-  sleuth:
-    sampler:
-      probability: 1.0
-  zipkin:
-    baseUrl: http://gdmt-ms-zipkin-server:9411
 
 application:
   identityTypeGroup: GROUP
