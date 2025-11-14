@@ -1,14 +1,6 @@
 server:
   port: 8080
 
-eureka:
-  client:
-    enabled: true
-    service-url:
-      defaultZone: ${EUREKA_SERVER_URI}
-  instance:
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-
 spring:
   jpa:
     properties:
